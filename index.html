@@ -3,8 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Makets</title>
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: #f9f9f9;
+        }
+    
+        .container {
+          width: 80%;
+          margin-top: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background-color: #fff;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        .tabs {
+          display: flex;
+          border-bottom: 1px solid #ccc;
+        }
+    
+        .tab {
+          padding: 10px 20px;
+          cursor: pointer;
+          flex: 1;
+          text-align: center;
+          border-right: 1px solid #ccc;
+          transition: background-color 0.3s;
+        }
+    
+        .tab:last-child {
+          border-right: none;
+        }
+    
+        .tab.active {
+          background-color: #ffcccc;
+          font-weight: bold;
+        }
+    
+        .content {
+          display: none;
+          padding: 20px;
+        }
+    
+        .content.active {
+          display: block;
+        }
+      </style>
+
 </head>
+
 <body>
 
     <div class="tabs">
@@ -15,6 +70,50 @@
         <div class="tab" data-target="lab5">Макет № 5</div>
         <div class="tab" data-target="lab6">Макет № 6</div>
     </div>
+
+    <div id="lab1" class="content active">
+        <p>Опис предметного середовища</p>
+        <p>Тема, Мета</p>
+        <p>Структура документа</p>
+      </div>
+      <div id="lab2" class="content">
+        <p>HTML-код ТАБЛИЦЬ</p>
+        <p>HTML-код ФОРМИ</p>
+        <p>HTML-код ЗОБРАЖЕННЯ</p>
+      </div>
+      <div id="lab3" class="content">
+        <p>Теоретична частина</p>
+        <p>Практична частина</p>
+      </div>
+      <div id="lab4" class="content">
+        <p>Аналіз результатів</p>
+        <p>Висновки</p>
+      </div>
+      <div id="lab5" class="content">
+        <p>Огляд методів</p>
+        <p>Застосування</p>
+      </div>
+      <div id="lab6" class="content">
+        <p>Деталі реалізації</p>
+        <p>Тестування</p>
+      </div>
+    </div>
+  
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.content');
+  
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+  
+          tab.classList.add('active');
+          document.getElementById(tab.dataset.target).classList.add('active');
+        });
+      });
+    </script>
     
 </body>
+
 </html>
