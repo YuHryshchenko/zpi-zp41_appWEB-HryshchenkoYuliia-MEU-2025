@@ -337,11 +337,29 @@
             flex: 3;
         }
 
+        #maket4 .header .text {
+            text-align: center;
+            flex: 3;
+        }
+
+        #maket5 .header .text {
+            text-align: center;
+            flex: 3;
+        }
+
         #maket2 h1, h2, h3 {
             margin: 5px 0;
         }
 
         #maket3 h1, h2, h3 {
+            margin: 5px 0;
+        }
+
+        #maket4 h1, h2, h3 {
+            margin: 5px 0;
+        }
+
+        #maket5 h1, h2, h3 {
             margin: 5px 0;
         }
 
@@ -351,6 +369,16 @@
         }
 
         #maket3 h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        #maket4 h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        #maket5 h1 {
             font-size: 2em;
             color: #333;
         }
@@ -365,6 +393,16 @@
             color: #555;
         }
 
+        #maket4 h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        #maket5 h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+
         #maket2 h3 {
             font-size: 1.2em;
             color: #555;
@@ -373,6 +411,133 @@
         #maket3 h3 {
             font-size: 1.2em;
             color: #555;
+        }
+
+        #maket4 h3 {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        #maket5 h3 {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Styles for fixed layout */
+        
+        .fixed-container {
+            width: 500px;
+            margin: 0 auto;
+            border: 2px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .fixed-container .block {
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .fixed-container .block1 {
+            width: 100%;
+            background-color: blue;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .fixed-container .block3 {
+            width: 100%;
+            overflow: auto;
+            background-color: blue;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .fixed-container .block2 {
+            width: 20%;
+            float: left;
+            background-color: orange;
+            color: black;
+        }
+
+        .fixed-container .block5 {
+            width: 20%;
+            float: left;
+            background-color: orange;
+            color: black;
+        }
+
+        .fixed-container .block4 {
+            width: 60%;
+            float: left;
+            background-color: white;
+            color: black;
+        }
+
+        .fixed-container .clear {
+            clear: both;
+        }
+
+        /* Styles for fluid layout */
+        .fluid-container {
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .fluid-container .block {
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .fluid-container .block1 {
+            width: 100%;
+            background-color: blue;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .fluid-container .block3 {
+            width: 100%;
+            background-color: blue;
+            overflow: auto;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .fluid-container .block2 {
+            width: 20%;
+            float: left;
+            background-color: orange;
+            color: black;
+        }
+
+        .fluid-container .block5 {
+            width: 20%;
+            float: left;
+            background-color: orange;
+            color: black;
+        }
+
+        .fluid-container .block4 {
+            width: 60%;
+            float: left;
+            background-color: white;
+            color: black;
+        }
+
+        .fluid-container .clear {
+            clear: both;
         }
         
       </style>
@@ -496,7 +661,7 @@
         <header class="header">
           <div class="text">
             <h1>Лабораторна робота № 2.1</h1>
-            <h2>Завдання №2</h2>
+            <h2>Завдання № 2, Варіант № 6</h2>
             <h3>Фіксована таблична верстка</h3>
           </div>
         </header>
@@ -532,7 +697,7 @@
         <header class="header">
           <div class="text">
             <h1>Лабораторна робота № 2.1</h1>
-            <h2>Завдання №2</h2>
+            <h2>Завдання № 2, Варіант № 6</h2>
             <h3>Гумова таблична верстка</h3>
           </div>
         </header>
@@ -565,10 +730,21 @@
     <div id="maket4" class="content">
       <div class="layout-container">
         <header class="header">
-          <h2>Аналіз результатів</h2>
+            <div class="text">
+                <h1>Лабораторна робота № 2.1</h1>
+                <h2>Завдання № 2, Варіант № 7</h2>
+                <h3>Фіксована блокова верстка</h3>
+            </div>
         </header>
         <main class="main-content">
-          <p>Опис аналізу результатів.</p>
+            <div class="fixed-container">
+                <div class="block block1">1</div>
+                <div class="block block2">2</div>
+                <div class="block block4">4</div>
+                <div class="block block5">5</div>
+                <div class="clear"></div>
+                <div class="block block3">3</div>
+            </div>
         </main>
       </div>
     </div>
@@ -576,10 +752,21 @@
     <div id="maket5" class="content">
       <div class="layout-container">
         <header class="header">
-          <h2>Огляд методів</h2>
+            <div class="text">
+                <h1>Лабораторна робота № 2.1</h1>
+                <h2>Завдання № 2, Варіант № 7</h2>
+                <h3>Гумова блокова верстка</h3>
+            </div>
         </header>
         <main class="main-content">
-          <p>Опис огляду методів.</p>
+            <div class="fluid-container">
+                <div class="block block1">1</div>
+                <div class="block block2">2</div>
+                <div class="block block4">4</div>
+                <div class="block block5">5</div>
+                <div class="block block3">3</div>
+                <div class="clear"></div>
+            </div>
         </main>
       </div>
     </div>
@@ -590,6 +777,130 @@
           <h2>Деталі реалізації</h2>
         </header>
         <main class="main-content">
+
+          <section id="methods" class="bg_black">
+            <div class="wrapper">
+                <div class="h3_heading center white">Ефективні методи навчання</div>
+                <h3 class="h2_heading center orange">100% засвоєння матеріалу</h3>
+                <div class="methods_grid">
+                    <div class="methods_left">
+                        <div class="methods_description paragraph"><p>Починаючи з 2016 року, ми відточували наші методи навчання і знайшли найбільш дієвий спосіб, який дає можливість студентам опановувати програму краще і в більшому об’ємі.</p>
+        <ul>
+          <li>Лекційний матеріал подається окремо. Це дає змогу зосередитись на ознайомленні з ним, не відволікаючись на виконання будь-яких дій.</li>
+          <li>Практичні заняття проходять в окремі дні та включають завдання по попередній лекції. При цьому частина завдань не містить абстрактних умов. Це дає змогу чітко закріпити пройдений матеріал. Але є завдання, які змусять вас розвиватись, оскільки будуть вже більш абстрактними, і їх виконання буде залежати від вашої уяви.</li>
+          <li>Як результат поєднання попередніх факторів ви опануєте теоретичну частину, закріпите її на практиці у двох різновидах завдань.</li>
+        </ul>
+        <p>Під час створення програми навчання ми спирались на новітні технології та рекомендації наших партнерів, щоб після закінчення навчання ви змогли швидше влаштуватись на роботу.</p></div>                    
+                        <a href="https://owu.com.ua/vidguky" class="button bg_yellow flex-center">всі відгуки</a>
+                    </div>    
+                    <div class="methods_right">
+                        <div class="methods_slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <div class="swiper-wrapper" style="transform: translate3d(-650px, 0px, 0px); transition-duration: 0ms;" id="swiper-wrapper-2eb51a3c17c9f086" aria-live="off"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="4" style="width: 650px;" role="group" aria-label="5 / 5">
+                                    <div class="methods_right_item">
+                                        <div class="play_button__content">
+                                            <div class="play_button__wrap flex-center" data-id="rAjeTqlInM4">
+                                                <div class="layer_button flex-center">
+                                                    <div class="play_button flex-center">
+                                                        <span class="fa fa-play"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://i.ytimg.com/vi/iZlseslCnHw/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
+                                    </div>
+                                </div>
+                                                                                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 650px;" role="group" aria-label="1 / 5">
+                                    <div class="methods_right_item">
+                                        <div class="play_button__content">
+                                            <div class="play_button__wrap flex-center" data-id="rAjeTqlInM4">
+                                                <div class="layer_button flex-center">
+                                                    <div class="play_button flex-center">
+                                                        <span class="fa fa-play"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://i.ytimg.com/vi/SUUKIvxkOIE/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
+                                    </div>
+                                </div>
+                                                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 650px;" role="group" aria-label="2 / 5">
+                                    <div class="methods_right_item">
+                                        <div class="play_button__content">
+                                            <div class="play_button__wrap flex-center" data-id="rAjeTqlInM4">
+                                                <div class="layer_button flex-center">
+                                                    <div class="play_button flex-center">
+                                                        <span class="fa fa-play"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://i.ytimg.com/vi/ubfy1xgc0ss/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
+                                    </div>
+                                </div>
+                                                        <div class="swiper-slide" data-swiper-slide-index="2" style="width: 650px;" role="group" aria-label="3 / 5">
+                                    <div class="methods_right_item">
+                                        <div class="play_button__content">
+                                            <div class="play_button__wrap flex-center" data-id="rAjeTqlInM4">
+                                                <div class="layer_button flex-center">
+                                                    <div class="play_button flex-center">
+                                                        <span class="fa fa-play"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://i.ytimg.com/vi/2fDT-7H1MOg/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
+                                    </div>
+                                </div>
+                                                        <div class="swiper-slide" data-swiper-slide-index="3" style="width: 650px;" role="group" aria-label="4 / 5">
+                                    <div class="methods_right_item">
+                                        <div class="play_button__content">
+                                            <div class="play_button__wrap flex-center" data-id="rAjeTqlInM4">
+                                                <div class="layer_button flex-center">
+                                                    <div class="play_button flex-center">
+                                                        <span class="fa fa-play"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://i.ytimg.com/vi/NC7QTTROT3I/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
+                                    </div>
+                                </div>
+                                                        <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="4" style="width: 650px;" role="group" aria-label="5 / 5">
+                                    <div class="methods_right_item">
+                                        <div class="play_button__content">
+                                            <div class="play_button__wrap flex-center" data-id="rAjeTqlInM4">
+                                                <div class="layer_button flex-center">
+                                                    <div class="play_button flex-center">
+                                                        <span class="fa fa-play"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://i.ytimg.com/vi/iZlseslCnHw/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
+                                    </div>
+                                </div>
+                                                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 650px;" role="group" aria-label="1 / 5">
+                                    <div class="methods_right_item">
+                                        <div class="play_button__content">
+                                            <div class="play_button__wrap flex-center" data-id="rAjeTqlInM4">
+                                                <div class="layer_button flex-center">
+                                                    <div class="play_button flex-center">
+                                                        <span class="fa fa-play"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://i.ytimg.com/vi/SUUKIvxkOIE/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
+                                    </div>
+                                </div></div>
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>                                
+                    </div>
+                </div>
+            </div>
+            <div class="methods__bg">відгуки</div>
+        </section>
+
           <p>Опис деталей реалізації.</p>
         </main>
       </div>
