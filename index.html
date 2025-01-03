@@ -208,7 +208,24 @@
             padding: 0;
         }
 
+        #maket3 body {
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
         #maket2 table {
+            width: 300px;
+            height: 400px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-weight: 600;
+            background-color: white;
+            border: 2px solid #616161;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #maket3 table {
             width: 30%;
             height: 400px;
             border-collapse: collapse;
@@ -224,16 +241,34 @@
             text-align: center;
         }
 
+        #maket3 td {
+            border: 2px solid #616161;
+            text-align: center;
+        }
+
         #maket2 .rectangle {
             background-color: white;
-            margin: auto;
-            padding-left: 15px;
-            width: 100%;
-            height: 80%;
+            margin: 10px;
+            height: 50%;
             border: 2px solid #616161;
         }
 
-        #maket2 .header {
+        #maket3 .rectangle {
+            background-color: white;
+            margin: auto;
+            width: 80%;
+            height: 50%;
+            border: 2px solid #616161;
+        }
+
+        #maket2 .table-header {
+            background-color: #F7CE46;
+            height: 50px;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        #maket3 .table-header {
             background-color: #F7CE46;
             height: 10%;
             text-align: right;
@@ -242,26 +277,52 @@
 
         #maket2 .footer {
             background-color: #F7CE46;
+            height: 50px;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        #maket3 .footer {
+            background-color: #F7CE46;
             height: 10%;
             text-align: left;
             padding-left: 30px;
         }
 
         #maket2 .white {
+            width: 20px;
+        }
+
+        #maket3 .white {
             width: 20%;
         }
 
         #maket2 .blue {
+            background-color: #4065F6;
+            width: 20px;
+        }
+
+        #maket3 .blue {
             background-color: #4065F6;
             width: 20%;
         }
 
         #maket2 .red {
             background-color: #EC5E57;
+            width: 20px;
+        }
+
+        #maket3 .red {
+            background-color: #EC5E57;
             width: 20%;
         }
 
         #maket2 .spacing {
+            width: 2px;
+            background-color: transparent;
+        }
+
+        #maket3 .spacing {
             width: 2%;
             background-color: transparent;
         }
@@ -271,11 +332,25 @@
             flex: 3;
         }
 
+        #maket3 .header .text {
+            text-align: center;
+            flex: 3;
+        }
+
         #maket2 h1, h2, h3 {
             margin: 5px 0;
         }
 
+        #maket3 h1, h2, h3 {
+            margin: 5px 0;
+        }
+
         #maket2 h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        #maket3 h1 {
             font-size: 2em;
             color: #333;
         }
@@ -285,7 +360,17 @@
             color: #555;
         }
 
+        #maket3 h2 {
+            font-size: 1.5em;
+            color: #555;
+        }
+
         #maket2 h3 {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        #maket3 h3 {
             font-size: 1.2em;
             color: #555;
         }
@@ -408,21 +493,57 @@
     <div id="maket2" class="content">
       <div class="layout-container">
 
-        <div class="header">
+        <header class="header">
           <div class="text">
             <h1>Лабораторна робота № 2.1</h1>
             <h2>Завдання №2</h2>
             <h3>Фіксована таблична верстка</h3>
           </div>
-        </div>
+        </header>
       
+        <main class="main-content">
+            <table>
+                <tr>
+                    <th colspan="3" class="table-header">
+                        <div class="rectangle"></div>
+                    </th>
+                    <th colspan="4" class="table-header">1</th>
+                </tr>
+                <tr class="row">
+                    <td class="blue">2</td>
+                    <td class="spacing"></td>
+                    <td class="red">3</td>
+                    <td class="spacing"></td>
+                    <td class="white">4</td>
+                    <td class="spacing"></td>
+                    <td class="red">5</td>
+                </tr>
+                <tr>
+                    <td colspan="7" class="footer">6</td>
+                </tr>
+            </table> 
+        </main>  
+      </div>
+    </div>
+
+    <div id="maket3" class="content">
+      <div class="layout-container">
+
+        <header class="header">
+          <div class="text">
+            <h1>Лабораторна робота № 2.1</h1>
+            <h2>Завдання №2</h2>
+            <h3>Гумова таблична верстка</h3>
+          </div>
+        </header>
+
         <main class="main-content">
           <table>
               <tr>
-                  <th colspan="3" class="header">
+                  <th colspan="3" class="table-header">
                       <div class="rectangle"></div>
                   </th>
-                  <th colspan="4" class="header">1</th>
+                  <th colspan="4" class="table-header">1</th>
               </tr>
               <tr class="row">
                   <td class="blue">2</td>
@@ -437,18 +558,6 @@
                   <td colspan="7" class="footer">6</td>
               </tr>
           </table> 
-        </main>  
-
-      </div>
-    </div>
-
-    <div id="maket3" class="content">
-      <div class="layout-container">
-        <header class="header">
-          <h2>Теоретична частина</h2>
-        </header>
-        <main class="main-content">
-          <p>Опис теоретичної частини.</p>
         </main>
       </div>
     </div>
