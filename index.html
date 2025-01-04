@@ -56,13 +56,6 @@
         .content.active {
           display: block;
         }
-
-        #maket1 .content {
-            width: 100%;
-            float: right;
-            padding: 20px;
-            box-sizing: border-box;
-        }
     
         .layout-container {
           display: flex;
@@ -79,16 +72,7 @@
             text-align: center;
             border-radius: 4px;
             margin-bottom: 20px;
-        }
-    
-        #maket1 .header {
-            background-color: #004080;
-            color: white;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        }        
 
         .main-content {
             padding: 10px;
@@ -115,6 +99,22 @@
             max-width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #maket1 .main-maket-content {
+            width: 78%;
+            float: right;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #maket1 .header {
+            background-color: #004080;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         #maket1 .navbar a {
@@ -780,126 +780,212 @@
 <body>
 
     <div class="container">
-    <div class="tabs">
-      <div class="tab active" data-target="maket1">Макет № 1</div>
-      <div class="tab" data-target="maket2">Макет № 2</div>
-      <div class="tab" data-target="maket3">Макет № 3</div>
-      <div class="tab" data-target="maket4">Макет № 4</div>
-      <div class="tab" data-target="maket5">Макет № 5</div>
-      <div class="tab" data-target="maket6">Макет № 6</div>
-    </div>
+        <div class="tabs">
+        <div class="tab active" data-target="maket1">Макет № 1</div>
+        <div class="tab" data-target="maket2">Макет № 2</div>
+        <div class="tab" data-target="maket3">Макет № 3</div>
+        <div class="tab" data-target="maket4">Макет № 4</div>
+        <div class="tab" data-target="maket5">Макет № 5</div>
+        <div class="tab" data-target="maket6">Макет № 6</div>
+        </div>
 
-    <div id="maket1" class="content active">
-      <div class="layout-container">
+        <div id="maket1" class="content active">
+            <div class="layout-container">
+                
+                <!-- Header Section -->
+                <header class="header">
+                    <div class="logo">Library</div>
+                    <nav class="navbar">
+                    <a href="#">Search</a>
+                    <a href="#">Didn't Find It?</a>
+                    <a href="#">My Account</a>
+                    <a href="#">Library Info</a>
+                    <a href="#">Library Services</a>
+                    <a href="#">Help</a>
+                    </nav>
+                </header>
+
+                <main class="main-content">
+
+                    <!-- Sidebar Section -->
+                    <aside class="sidebar">
+                        <h3>What to Read?</h3>
+                        <ul>
+                        <li><a href="#">Find Your Next Book</a></li>
+                        <li><a href="#">My Perfect Read</a></li>
+                        <li><a href="#">Novelist</a></li>
+                        </ul>
+                        <h3>eBooks / Audio / eMagazines</h3>
+                        <ul>
+                        <li><a href="#">eBooks</a></li>
+                        <li><a href="#">eAudio</a></li>
+                        <li><a href="#">eMagazines</a></li>
+                        </ul>
+                    </aside>
+
+                    <!-- Content Section -->
+                    <section class="main-maket-content">
+                        <div class="carousel">
+                            <h2>Becoming your best self</h2>
+                            <div class="carousel-inner" id="carousel-1">
+                                <div class="item active">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9780593714744/SC.GIF&client=fcplpol&upc=&oclc=1407025971" alt="Book 1">
+                                    <p>Job therapy : finding work that works for you</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9781956867619/SC.GIF&client=fcplpol&upc=&oclc=1393184037" alt="Book 2">
+                                    <p>It's okay not to be fabulous every day!</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9780593731086/SC.GIF&client=fcplpol&upc=&oclc=1408727143" alt="Book 3">
+                                    <p>Lessons for living : what only adversity can teach you</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9781401967680/SC.GIF&client=fcplpol&upc=&oclc=1289921280" alt="Book 4">
+                                    <p>Be the calm or be the storm : leadership lessons from a woman at the helm</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9780593655955/SC.GIF&client=fcplpol&upc=&oclc=1380997871" alt="Book 5">
+                                    <p>Be useful : seven tools for life</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9780593599709/SC.GIF&client=fcplpol&upc=&oclc=1418891348" alt="Book 6">
+                                    <p>Not too late : the power of pushing limits at any age</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9781454954422/SC.GIF&client=fcplpol&upc=&oclc=1406407921" alt="Book 7">
+                                    <p>If you live to 100, you might as well be happy : essays on ordinary joy</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9780593653197/SC.GIF&client=fcplpol&upc=&oclc=1379221231" alt="Book 8">
+                                    <p>Music and mind : harnessing the arts for health and wellness</p>
+                                </div>
+                            </div>
+                            <button class="prev" data-carousel="carousel-1">&#8249;</button>
+                            <button class="next" data-carousel="carousel-1">&#8250;</button>
+                        </div>
+                        <hr style="color: aliceblue">
+                
+                        <div class="carousel">
+                        <h2>Scifi and fantasy</h2>
+                            <div class="carousel-inner" id="carousel-2">
+                                <div class="item active">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9780373211722/SC.GIF&client=fcplpol&upc=&oclc=900032675" alt="Book 9">
+                                    <p>Legacy of kings</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9781945994135/SC.GIF&client=fcplpol&upc=&oclc=" alt="Book 10">
+                                    <p>Mr. Baley</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9781542681049/SC.GIF&client=fcplpol&upc=&oclc=1381178810" alt="Book 11">
+                                    <p>Our inner alien</p>
+                                </div>
+                                <div class="item active">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9781948279000/SC.GIF&client=fcplpol&upc=&oclc=" alt="Book 12">
+                                    <p>World One</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9781732814219/SC.GIF&client=fcplpol&upc=&oclc=" alt="Book 13">
+                                    <p>Racing the suns</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9798350914795/SC.GIF&client=fcplpol&upc=&oclc=1397553377" alt="Book 14">
+                                    <p>To kill a clone</p>
+                                </div>
+                                <div class="item active">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9781543950557/SC.GIF&client=fcplpol&upc=&oclc=1083183187" alt="Book 15">
+                                    <p>Strxia : the odds are against us</p>
+                                </div>
+                                <div class="item">
+                                    <img src="https://secure.syndetics.com/index.aspx?isbn=9780765381606/SC.GIF&client=fcplpol&upc=&oclc=1015965531" alt="Book 16">
+                                    <p>Count to infinity</p>
+                                </div>
+                            </div>
+                            <button class="prev" data-carousel="carousel-2">&#8249;</button>
+                            <button class="next" data-carousel="carousel-2">&#8250;</button>
+                        </div>
+
+                    </section>
+                </main>
+
+                <!-- Footer Section -->
+                <footer class="footer">
+                    © 2024 Library Catalog
+                </footer>
+
+                <script>
+                    // JavaScript for Carousel
+                    document.querySelectorAll('.prev, .next').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const carousel = document.getElementById(button.dataset.carousel);
+                        const items = carousel.querySelectorAll('.item');
+                        const activeItem = carousel.querySelector('.item.active');
+                        const activeIndex = Array.from(items).indexOf(activeItem);
+
+                        activeItem.classList.remove('active');
+                        if (button.classList.contains('prev')) {
+                        const prevIndex = (activeIndex - 1 + items.length) % items.length;
+                        items[prevIndex].classList.add('active');
+                        } else {
+                        const nextIndex = (activeIndex + 1) % items.length;
+                        items[nextIndex].classList.add('active');
+                        }
+                    });
+                    });
+                </script>
+                
+            </div>
+        </div>
+
+        <div id="maket2" class="content">
+        <div class="layout-container">
+
+            <header class="header">
+            <div class="text">
+                <h1>Лабораторна робота № 2.1</h1>
+                <h2>Завдання № 2, Варіант № 6</h2>
+                <h3>Фіксована таблична верстка</h3>
+            </div>
+            </header>
         
-         <!-- Header Section -->
-        <header class="header">
-            <div class="logo">Library</div>
-            <nav class="navbar">
-              <a href="#">Search</a>
-              <a href="#">Didn't Find It?</a>
-              <a href="#">My Account</a>
-              <a href="#">Library Info</a>
-              <a href="#">Library Services</a>
-              <a href="#">Help</a>
-            </nav>
-        </header>
+            <main class="main-content">
+                <table>
+                    <tr>
+                        <th colspan="3" class="table-header">
+                            <div class="rectangle"></div>
+                        </th>
+                        <th colspan="4" class="table-header">1</th>
+                    </tr>
+                    <tr class="row">
+                        <td class="blue">2</td>
+                        <td class="spacing"></td>
+                        <td class="red">3</td>
+                        <td class="spacing"></td>
+                        <td class="white">4</td>
+                        <td class="spacing"></td>
+                        <td class="red">5</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="footer">6</td>
+                    </tr>
+                </table> 
+            </main>  
+        </div>
+        </div>
 
-        <main class="main-content">
+        <div id="maket3" class="content">
+        <div class="layout-container">
 
-            <!-- Sidebar Section -->
-            <aside class="sidebar">
-                <h3>What to Read?</h3>
-                <ul>
-                <li><a href="#">Find Your Next Book</a></li>
-                <li><a href="#">My Perfect Read</a></li>
-                <li><a href="#">Novelist</a></li>
-                </ul>
-                <h3>eBooks / Audio / eMagazines</h3>
-                <ul>
-                <li><a href="#">eBooks</a></li>
-                <li><a href="#">eAudio</a></li>
-                <li><a href="#">eMagazines</a></li>
-                </ul>
-            </aside>
+            <header class="header">
+            <div class="text">
+                <h1>Лабораторна робота № 2.1</h1>
+                <h2>Завдання № 2, Варіант № 6</h2>
+                <h3>Гумова таблична верстка</h3>
+            </div>
+            </header>
 
-            <!-- Content Section -->
-            <section class="content">
-                <div class="carousel">
-                <h2>Holiday Cooking and Crafts</h2>
-                <div class="carousel-inner" id="carousel-1">
-                    <div class="item active">
-                    <img src="https://via.placeholder.com/100x150" alt="Book 1">
-                    <p>Book Title 1</p>
-                    </div>
-                    <div class="item">
-                    <img src="https://via.placeholder.com/100x150" alt="Book 2">
-                    <p>Book Title 2</p>
-                    </div>
-                </div>
-                <button class="prev" data-carousel="carousel-1">&#8249;</button>
-                <button class="next" data-carousel="carousel-1">&#8250;</button>
-                </div>
-        
-                <div class="carousel">
-                <h2>Christmas Stories for All Ages</h2>
-                <div class="carousel-inner" id="carousel-2">
-                    <div class="item active">
-                    <img src="https://via.placeholder.com/100x150" alt="Book 3">
-                    <p>Book Title 3</p>
-                    </div>
-                    <div class="item">
-                    <img src="https://via.placeholder.com/100x150" alt="Book 4">
-                    <p>Book Title 4</p>
-                    </div>
-                </div>
-                <button class="prev" data-carousel="carousel-2">&#8249;</button>
-                <button class="next" data-carousel="carousel-2">&#8250;</button>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            © 2024 Library Catalog
-        </footer>
-
-        <script>
-            // JavaScript for Carousel
-            document.querySelectorAll('.prev, .next').forEach(button => {
-            button.addEventListener('click', () => {
-                const carousel = document.getElementById(button.dataset.carousel);
-                const items = carousel.querySelectorAll('.item');
-                const activeItem = carousel.querySelector('.item.active');
-                const activeIndex = Array.from(items).indexOf(activeItem);
-
-                activeItem.classList.remove('active');
-                if (button.classList.contains('prev')) {
-                const prevIndex = (activeIndex - 1 + items.length) % items.length;
-                items[prevIndex].classList.add('active');
-                } else {
-                const nextIndex = (activeIndex + 1) % items.length;
-                items[nextIndex].classList.add('active');
-                }
-            });
-            });
-        </script>
-        
-      </div>
-    </div>
-
-    <div id="maket2" class="content">
-      <div class="layout-container">
-
-        <header class="header">
-          <div class="text">
-            <h1>Лабораторна робота № 2.1</h1>
-            <h2>Завдання № 2, Варіант № 6</h2>
-            <h3>Фіксована таблична верстка</h3>
-          </div>
-        </header>
-      
-        <main class="main-content">
+            <main class="main-content">
             <table>
                 <tr>
                     <th colspan="3" class="table-header">
@@ -920,189 +1006,153 @@
                     <td colspan="7" class="footer">6</td>
                 </tr>
             </table> 
-        </main>  
-      </div>
-    </div>
+            </main>
+        </div>
+        </div>
 
-    <div id="maket3" class="content">
-      <div class="layout-container">
-
-        <header class="header">
-          <div class="text">
-            <h1>Лабораторна робота № 2.1</h1>
-            <h2>Завдання № 2, Варіант № 6</h2>
-            <h3>Гумова таблична верстка</h3>
-          </div>
-        </header>
-
-        <main class="main-content">
-          <table>
-              <tr>
-                  <th colspan="3" class="table-header">
-                      <div class="rectangle"></div>
-                  </th>
-                  <th colspan="4" class="table-header">1</th>
-              </tr>
-              <tr class="row">
-                  <td class="blue">2</td>
-                  <td class="spacing"></td>
-                  <td class="red">3</td>
-                  <td class="spacing"></td>
-                  <td class="white">4</td>
-                  <td class="spacing"></td>
-                  <td class="red">5</td>
-              </tr>
-              <tr>
-                  <td colspan="7" class="footer">6</td>
-              </tr>
-          </table> 
-        </main>
-      </div>
-    </div>
-
-    <div id="maket4" class="content">
-      <div class="layout-container">
-        <header class="header">
-            <div class="text">
-                <h1>Лабораторна робота № 2.1</h1>
-                <h2>Завдання № 2, Варіант № 7</h2>
-                <h3>Фіксована блокова верстка</h3>
-            </div>
-        </header>
-        <main class="main-content">
-            <div class="fixed-container">
-                <div class="block block1">1</div>
-                <div class="block block2">2</div>
-                <div class="block block4">4</div>
-                <div class="block block5">5</div>
-                <div class="clear"></div>
-                <div class="block block3">3</div>
-            </div>
-        </main>
-      </div>
-    </div>
-
-    <div id="maket5" class="content">
-      <div class="layout-container">
-        <header class="header">
-            <div class="text">
-                <h1>Лабораторна робота № 2.1</h1>
-                <h2>Завдання № 2, Варіант № 7</h2>
-                <h3>Гумова блокова верстка</h3>
-            </div>
-        </header>
-        <main class="main-content">
-            <div class="fluid-container">
-                <div class="block block1">1</div>
-                <div class="block block2">2</div>
-                <div class="block block4">4</div>
-                <div class="block block5">5</div>
-                <div class="block block3">3</div>
-                <div class="clear"></div>
-            </div>
-        </main>
-      </div>
-    </div>
-
-    <div id="maket6" class="content">
-      <div class="layout-container">
-        <header class="header">
-            <div class="text">
-                <h1>Лабораторна робота № 2.1</h1>
-                <h2>Завдання № 3, Варіант № 6</h2>
-              </div>
-        </header>
-        <main class="main-content">
-
-            <section id="methods" class="bg_black">
-                <div class="wrapper">
-                    <div class="h3_heading center white">Ефективні методи навчання</div>
-                        <h3 class="h2_heading center orange">100% засвоєння матеріалу</h3>
-                    <div class="methods_grid">
-                        <div class="methods_left">
-                            <div class="methods_description paragraph">
-                                <p>Починаючи з 2016 року, ми відточували наші методи навчання і знайшли найбільш дієвий спосіб, який дає можливість студентам опановувати програму краще і в більшому об’ємі.</p>
-                                <ul>
-                                <li>Лекційний матеріал подається окремо. Це дає змогу зосередитись на ознайомленні з ним, не відволікаючись на виконання будь-яких дій.</li>
-                                <li>Практичні заняття проходять в окремі дні та включають завдання по попередній лекції. При цьому частина завдань не містить абстрактних умов. Це дає змогу чітко закріпити пройдений матеріал. Але є завдання, які змусять вас розвиватись, оскільки будуть вже більш абстрактними, і їх виконання буде залежати від вашої уяви.</li>
-                                <li>Як результат поєднання попередніх факторів ви опануєте теоретичну частину, закріпите її на практиці у двох різновидах завдань.</li>
-                                </ul>
-                            </div>
-                        </div>    
-                        <div class="methods_right">
-                            <div class="methods_right_item">
-                                <img src="https://i.ytimg.com/vi/SUUKIvxkOIE/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
-                            </div>
-                            <a href="https://owu.com.ua/vidguky" class="button bg_yellow flex-center">всі відгуки</a>
-                        </div> 
-                    </div>
+        <div id="maket4" class="content">
+        <div class="layout-container">
+            <header class="header">
+                <div class="text">
+                    <h1>Лабораторна робота № 2.1</h1>
+                    <h2>Завдання № 2, Варіант № 7</h2>
+                    <h3>Фіксована блокова верстка</h3>
                 </div>
-            </section>
+            </header>
+            <main class="main-content">
+                <div class="fixed-container">
+                    <div class="block block1">1</div>
+                    <div class="block block2">2</div>
+                    <div class="block block4">4</div>
+                    <div class="block block5">5</div>
+                    <div class="clear"></div>
+                    <div class="block block3">3</div>
+                </div>
+            </main>
+        </div>
+        </div>
 
-            <section id="direction">
-                <div class="wrapper">
-                    <div class="h3_heading center blue" style="color: #3298f2">Наші курси програмування</div>
-                    <h3 class="h2_heading center">Обери напрямок програмування</h3>        
-                    <div class="direction_slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">                    
-                                <div class="direction_item">
-                                    <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/java.svg" alt="Icons Java">
-                                    <div class="direction_item__title">java<br>complex</div>
-                                    <a href="https://owu.com.ua/kurs-java">Детальніше</a>
+        <div id="maket5" class="content">
+        <div class="layout-container">
+            <header class="header">
+                <div class="text">
+                    <h1>Лабораторна робота № 2.1</h1>
+                    <h2>Завдання № 2, Варіант № 7</h2>
+                    <h3>Гумова блокова верстка</h3>
+                </div>
+            </header>
+            <main class="main-content">
+                <div class="fluid-container">
+                    <div class="block block1">1</div>
+                    <div class="block block2">2</div>
+                    <div class="block block4">4</div>
+                    <div class="block block5">5</div>
+                    <div class="block block3">3</div>
+                    <div class="clear"></div>
+                </div>
+            </main>
+        </div>
+        </div>
+
+        <div id="maket6" class="content">
+        <div class="layout-container">
+            <header class="header">
+                <div class="text">
+                    <h1>Лабораторна робота № 2.1</h1>
+                    <h2>Завдання № 3, Варіант № 6</h2>
+                </div>
+            </header>
+            <main class="main-content">
+
+                <section id="methods" class="bg_black">
+                    <div class="wrapper">
+                        <div class="h3_heading center white">Ефективні методи навчання</div>
+                            <h3 class="h2_heading center orange">100% засвоєння матеріалу</h3>
+                        <div class="methods_grid">
+                            <div class="methods_left">
+                                <div class="methods_description paragraph">
+                                    <p>Починаючи з 2016 року, ми відточували наші методи навчання і знайшли найбільш дієвий спосіб, який дає можливість студентам опановувати програму краще і в більшому об’ємі.</p>
+                                    <ul>
+                                    <li>Лекційний матеріал подається окремо. Це дає змогу зосередитись на ознайомленні з ним, не відволікаючись на виконання будь-яких дій.</li>
+                                    <li>Практичні заняття проходять в окремі дні та включають завдання по попередній лекції. При цьому частина завдань не містить абстрактних умов. Це дає змогу чітко закріпити пройдений матеріал. Але є завдання, які змусять вас розвиватись, оскільки будуть вже більш абстрактними, і їх виконання буде залежати від вашої уяви.</li>
+                                    <li>Як результат поєднання попередніх факторів ви опануєте теоретичну частину, закріпите її на практиці у двох різновидах завдань.</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="methods_right">
+                                <div class="methods_right_item">
+                                    <img src="https://i.ytimg.com/vi/SUUKIvxkOIE/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
+                                </div>
+                                <a href="https://owu.com.ua/vidguky" class="button bg_yellow flex-center">всі відгуки</a>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+
+                <section id="direction">
+                    <div class="wrapper">
+                        <div class="h3_heading center blue" style="color: #3298f2">Наші курси програмування</div>
+                        <h3 class="h2_heading center">Обери напрямок програмування</h3>        
+                        <div class="direction_slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">                    
+                                    <div class="direction_item">
+                                        <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/java.svg" alt="Icons Java">
+                                        <div class="direction_item__title">java<br>complex</div>
+                                        <a href="https://owu.com.ua/kurs-java">Детальніше</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">                    
+                                    <div class="direction_item">
+                                        <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/js.svg" alt="Icons JavaScript">
+                                        <div class="direction_item__title">javascript<br>complex</div>
+                                        <a href="https://owu.com.ua/kurs-javascript">Детальніше</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">                    
+                                    <div class="direction_item">
+                                        <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/python.svg" alt="Icons Python">
+                                        <div class="direction_item__title">python<br>complex</div>
+                                        <a href="https://owu.com.ua/kurs-python">Детальніше</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">                    
+                                    <div class="direction_item">
+                                        <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/qa.svg" alt="Icons QA/QC">
+                                        <div class="direction_item__title">qa/qc<br>тестування</div>
+                                        <a href="https://owu.com.ua/kurs-testuvannya-qa-qc">Детальніше</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">                    
-                                <div class="direction_item">
-                                    <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/js.svg" alt="Icons JavaScript">
-                                    <div class="direction_item__title">javascript<br>complex</div>
-                                    <a href="https://owu.com.ua/kurs-javascript">Детальніше</a>
-                                </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="partners_about" style="background-color:#9dc6ea4b">
+                    <div class="wrapper">
+                        <div class="methods_grid">
+                            <div class="methods_left">
+                                <img class="all_item_reviews__picture lazyloaded" data-src="https://i.ytimg.com/vi/KsPLJ7TRRgY/hqdefault.jpg" alt="Loonars" src="https://i.ytimg.com/vi/KsPLJ7TRRgY/hqdefault.jpg">
                             </div>
-                            <div class="swiper-slide">                    
-                                <div class="direction_item">
-                                    <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/python.svg" alt="Icons Python">
-                                    <div class="direction_item__title">python<br>complex</div>
-                                    <a href="https://owu.com.ua/kurs-python">Детальніше</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">                    
-                                <div class="direction_item">
-                                    <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/qa.svg" alt="Icons QA/QC">
-                                    <div class="direction_item__title">qa/qc<br>тестування</div>
-                                    <a href="https://owu.com.ua/kurs-testuvannya-qa-qc">Детальніше</a>
+                            <div class="methods_right" style="padding-top: 50px;">
+                                <div class="partners_about__grid">
+                                    <div class="h3_heading center orange" style="color: #000">Роботодавці задоволені</div>
+                                    <h3 class="h2_heading center" style="color:#3298F2 ;">Нашими випускниками</h3>
+                                    <picture>
+                                        <source srcset="https://owu.com.ua/wp-content/themes/owu/image/brand/webp/mobile.webp" media="(max-width: 480px)">
+                                        <source data-srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp" type="image/webp" srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp">
+                                        <img class="reviews_image ls-is-cached lazyloaded" data-src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png" alt="Brand" src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
-                </div>
-            </section>
-
-            <section id="partners_about" style="background-color:#9dc6ea4b">
-                <div class="wrapper">
-                    <div class="methods_grid">
-                        <div class="methods_left">
-                            <img class="all_item_reviews__picture lazyloaded" data-src="https://i.ytimg.com/vi/KsPLJ7TRRgY/hqdefault.jpg" alt="Loonars" src="https://i.ytimg.com/vi/KsPLJ7TRRgY/hqdefault.jpg">
-                        </div>
-                        <div class="methods_right" style="padding-top: 50px;">
-                            <div class="partners_about__grid">
-                                <div class="h3_heading center orange" style="color: #000">Роботодавці задоволені</div>
-                                <h3 class="h2_heading center" style="color:#3298F2 ;">Нашими випускниками</h3>
-                                <picture>
-                                    <source srcset="https://owu.com.ua/wp-content/themes/owu/image/brand/webp/mobile.webp" media="(max-width: 480px)">
-                                    <source data-srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp" type="image/webp" srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp">
-                                    <img class="reviews_image ls-is-cached lazyloaded" data-src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png" alt="Brand" src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-        </main>
-      </div>
-    </div>
+                </section>
+                
+            </main>
+        </div>
+        </div>
   </div>
 
   <script>
