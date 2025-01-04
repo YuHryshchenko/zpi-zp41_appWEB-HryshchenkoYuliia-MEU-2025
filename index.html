@@ -613,11 +613,13 @@
         }
 
         #maket6 .methods_left {
-            width: 50%;
+            width: 49%;
+            float: left;
         }
 
         #maket6 .methods_right {
-            width: 50%;
+            width: 49%;
+            float: right;
         }
 
         #maket6 .methods_right .button {
@@ -626,10 +628,15 @@
             margin-top: 100px;
         }
 
+        #maket6 a:visited {
+            text-decoration: none;
+        }
+
         #maket6 .methods_description p {
             font-weight: 300;
             text-align: justify;
             margin-bottom: 20px;
+            margin-top: 0px;
         }
 
         #maket6 .methods_description {
@@ -669,6 +676,32 @@
 
         #maket6 li {
             list-style: none;
+        }
+
+        #maket6 .button {
+            position: relative;
+            border-radius: 6px;
+            padding: 22px 0;
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            transition: all .3s;
+            overflow: hidden;
+            min-width: 250px;
+            max-width: 400px;
+            cursor: pointer;
+            border: none;
+        }
+
+        #maket6 .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #maket6 .bg_yellow {
+            background-color: #FFD43D;
         }
 
         
@@ -938,6 +971,64 @@
                     </div>
                 </div>
             </section>
+
+            <section id="direction">
+                <div class="wrapper">
+                    <div class="h3_heading center blue">Наші курси програмування</div>
+                    <h3 class="h2_heading center">Обери напрямок програмування</h3>        
+                    <div class="direction_slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">                    
+                                <div class="direction_item">
+                                    <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/java.svg" alt="Icons Java">
+                                    <div class="direction_item__title">java<br>complex</div>
+                                    <a href="https://owu.com.ua/kurs-java">Детальніше</a>
+                                </div>
+                            </div>
+                                            <div class="swiper-slide">                    
+                                <div class="direction_item">
+                                    <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/js.svg" alt="Icons JavaScript">
+                                    <div class="direction_item__title">javascript<br>
+            complex</div>
+                                    <a href="https://owu.com.ua/kurs-javascript">Детальніше</a>
+                                </div>
+                            </div>
+                                            <div class="swiper-slide">                    
+                                <div class="direction_item">
+                                    <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/python.svg" alt="Icons Python">
+                                    <div class="direction_item__title">python<br>
+            complex</div>
+                                    <a href="https://owu.com.ua/kurs-python">Детальніше</a>
+                                </div>
+                            </div>
+                                            <div class="swiper-slide">                    
+                                <div class="direction_item">
+                                    <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/qa.svg" alt="Icons QA/QC">
+                                    <div class="direction_item__title">qa/qc<br>
+            тестування</div>
+                                    <a href="https://owu.com.ua/kurs-testuvannya-qa-qc">Детальніше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partners_about">
+                <div class="wrapper">
+                    <div class="h3_heading center orange" style="color: #000;">Роботодавці задоволені</div>
+                    <h3 class="h2_heading center" style="color:#3298F2 ;">Нашими випускниками</h3>    
+                    <div class="partners_about__grid">
+                        <picture>
+                            <source srcset="https://owu.com.ua/wp-content/themes/owu/image/brand/webp/mobile.webp" media="(max-width: 480px)">
+                            <source data-srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp" type="image/webp" srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp">
+                            <img class="reviews_image ls-is-cached lazyloaded" data-src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png" alt="Brand" src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
 
         </main>
       </div>
