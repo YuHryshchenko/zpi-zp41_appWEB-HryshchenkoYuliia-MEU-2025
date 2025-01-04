@@ -704,6 +704,73 @@
             background-color: #FFD43D;
         }
 
+        #maket6 #direction {
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        #maket6 .direction_slider .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 40px;
+        }
+
+        #maket6 .direction_item {
+            position: relative;
+            border: 1px solid #9DC6EA;
+            border-radius: 20px;
+            padding-top: 53px;
+            transition: .3s;
+            margin-top: 25px;
+        }
+
+        #maket6 .direction_item__icon {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+        }
+
+        #maket6 .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+            box-sizing: content-box;
+        }
+
+        #maket6 .direction_item__title {
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 1.2;
+            text-align: center;
+            text-transform: uppercase;
+            color: #3298F2;
+            margin-bottom: 37px;
+        }
+
+        #maket6 .direction_item a:hover {
+            background-color: #3298F2;
+        }
+
+        #maket6 .direction_item a {
+            display: block;
+            background-color: #E6EDF3;
+            font-weight: 700;
+            color: #000;
+            border-radius: 0 0 20px 20px;
+            padding: 20px 0;
+            text-align: center;
+            cursor: pointer;
+            transition: .3s;
+            text-decoration: none;
+        }
+
         
         
       </style>
@@ -974,7 +1041,7 @@
 
             <section id="direction">
                 <div class="wrapper">
-                    <div class="h3_heading center blue">Наші курси програмування</div>
+                    <div class="h3_heading center blue" style="color: #3298f2">Наші курси програмування</div>
                     <h3 class="h2_heading center">Обери напрямок програмування</h3>        
                     <div class="direction_slider swiper">
                         <div class="swiper-wrapper">
@@ -985,27 +1052,24 @@
                                     <a href="https://owu.com.ua/kurs-java">Детальніше</a>
                                 </div>
                             </div>
-                                            <div class="swiper-slide">                    
+                            <div class="swiper-slide">                    
                                 <div class="direction_item">
                                     <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/js.svg" alt="Icons JavaScript">
-                                    <div class="direction_item__title">javascript<br>
-            complex</div>
+                                    <div class="direction_item__title">javascript<br>complex</div>
                                     <a href="https://owu.com.ua/kurs-javascript">Детальніше</a>
                                 </div>
                             </div>
-                                            <div class="swiper-slide">                    
+                            <div class="swiper-slide">                    
                                 <div class="direction_item">
                                     <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/python.svg" alt="Icons Python">
-                                    <div class="direction_item__title">python<br>
-            complex</div>
+                                    <div class="direction_item__title">python<br>complex</div>
                                     <a href="https://owu.com.ua/kurs-python">Детальніше</a>
                                 </div>
                             </div>
-                                            <div class="swiper-slide">                    
+                            <div class="swiper-slide">                    
                                 <div class="direction_item">
                                     <img class="direction_item__icon" src="https://owu.com.ua/wp-content/uploads/2023/12/qa.svg" alt="Icons QA/QC">
-                                    <div class="direction_item__title">qa/qc<br>
-            тестування</div>
+                                    <div class="direction_item__title">qa/qc<br>тестування</div>
                                     <a href="https://owu.com.ua/kurs-testuvannya-qa-qc">Детальніше</a>
                                 </div>
                             </div>
@@ -1015,21 +1079,27 @@
                 </div>
             </section>
 
-            <section id="partners_about">
+            <section id="partners_about" style="background-color:#9dc6ea4b">
                 <div class="wrapper">
-                    <div class="h3_heading center orange" style="color: #000;">Роботодавці задоволені</div>
-                    <h3 class="h2_heading center" style="color:#3298F2 ;">Нашими випускниками</h3>    
-                    <div class="partners_about__grid">
-                        <picture>
-                            <source srcset="https://owu.com.ua/wp-content/themes/owu/image/brand/webp/mobile.webp" media="(max-width: 480px)">
-                            <source data-srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp" type="image/webp" srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp">
-                            <img class="reviews_image ls-is-cached lazyloaded" data-src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png" alt="Brand" src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png">
-                        </picture>
+                    <div class="methods_grid">
+                        <div class="methods_left">
+                            <img class="all_item_reviews__picture lazyloaded" data-src="https://i.ytimg.com/vi/KsPLJ7TRRgY/hqdefault.jpg" alt="Loonars" src="https://i.ytimg.com/vi/KsPLJ7TRRgY/hqdefault.jpg">
+                        </div>
+                        <div class="methods_right" style="padding-top: 50px;">
+                            <div class="partners_about__grid">
+                                <div class="h3_heading center orange" style="color: #000">Роботодавці задоволені</div>
+                                <h3 class="h2_heading center" style="color:#3298F2 ;">Нашими випускниками</h3>
+                                <picture>
+                                    <source srcset="https://owu.com.ua/wp-content/themes/owu/image/brand/webp/mobile.webp" media="(max-width: 480px)">
+                                    <source data-srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp" type="image/webp" srcset="https://owu.com.ua/wp-content/themes/owu/image/root_webp/all.webp">
+                                    <img class="reviews_image ls-is-cached lazyloaded" data-src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png" alt="Brand" src="https://owu.com.ua/wp-content/themes/owu/image/brand/all.png">
+                                </picture>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
-
+            
         </main>
       </div>
     </div>
