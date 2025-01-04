@@ -368,7 +368,7 @@
             margin: 5px 0;
         }
 
-        #maket6 h1, h2, h3 {
+        #maket6 h1, h2 {
             margin: 5px 0;
         }
 
@@ -442,12 +442,7 @@
             color: #555;
         }
 
-        #maket6 h3 {
-            font-size: 1.2em;
-            color: #555;
-        }
-  
-        .fixed-container {
+                .fixed-container {
             width: 500px;
             margin: 0 auto;
             border: 2px solid black;
@@ -560,6 +555,123 @@
         .fluid-container .clear {
             clear: both;
         }
+
+        #maket6 body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 1;
+            color: #000;
+        }
+
+        #maket6 *, ::before, ::after {
+            box-sizing: border-box;
+        }
+
+        #maket6 .bg_black {
+            background-color: #282828;
+        }
+
+        #maket6 .wrapper {
+            display: grid;
+            max-width: 1600px;
+            padding: 0 30px;
+            margin: 0 auto;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        #maket6 img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #maket6 .center {
+            text-align: center;
+        }
+
+        #maket6 .white {
+            color: #ffffff;
+        }
+
+        #maket6 .orange {
+            color: #ff9638;
+        }
+
+        #maket6 .h2_heading {
+            font-size: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 36px;
+        }
+
+        #maket6 .h3_heading {
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 26px;
+        }
+
+        #maket6 .methods_left {
+            width: 50%;
+        }
+
+        #maket6 .methods_right {
+            width: 50%;
+        }
+
+        #maket6 .methods_right .button {
+            color: #292929;
+            max-width: 315px;
+            margin-top: 100px;
+        }
+
+        #maket6 .methods_description p {
+            font-weight: 300;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        #maket6 .methods_description {
+            color: #fff;
+        }
+
+        #maket6 .paragraph {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        
+        #maket6 .methods_description ul li {
+            position: relative;
+            padding-left: 30px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        #maket6 .methods_description ul li::before {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: #3298F2;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+
+        #maket6 ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        #maket6 li {
+            list-style: none;
+        }
+
+        
         
       </style>
 
@@ -815,29 +927,13 @@
                                 <li>Практичні заняття проходять в окремі дні та включають завдання по попередній лекції. При цьому частина завдань не містить абстрактних умов. Це дає змогу чітко закріпити пройдений матеріал. Але є завдання, які змусять вас розвиватись, оскільки будуть вже більш абстрактними, і їх виконання буде залежати від вашої уяви.</li>
                                 <li>Як результат поєднання попередніх факторів ви опануєте теоретичну частину, закріпите її на практиці у двох різновидах завдань.</li>
                                 </ul>
-                                <p>Під час створення програми навчання ми спирались на новітні технології та рекомендації наших партнерів, щоб після закінчення навчання ви змогли швидше влаштуватись на роботу.</p>
                             </div>                    
                             <a href="https://owu.com.ua/vidguky" class="button bg_yellow flex-center">всі відгуки</a>
                         </div>    
                         <div class="methods_right">
-                            <div class="methods_slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 650px;" role="group" aria-label="1 / 5">
-                                    <div class="methods_right_item">
-                                        <div class="play_button__content">
-                                            <div class="play_button__wrap flex-center" data-id="rAjeTqlInM4">
-                                                <div class="layer_button flex-center">
-                                                    <div class="play_button flex-center">
-                                                        <span class="fa fa-play"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="https://i.ytimg.com/vi/SUUKIvxkOIE/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
-                                    </div>
-                                </div>
+                            <div class="methods_right_item">
+                                <img src="https://i.ytimg.com/vi/SUUKIvxkOIE/maxresdefault.jpg" alt="Ігор курс  javascript complex відгук oktenweb">
                             </div>
-                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
-                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                         </div> 
                     </div>
                 </div>
